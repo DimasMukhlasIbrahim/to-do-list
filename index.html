@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <title>To DO List</title>
+</head>
+<body>
+    
+    <!-- div utama -->
+    <main class="app">
+
+        <!-- section intro -->
+        <section class="greeting">
+            <h2 class="title-greeting">
+              Halo, Apa Kabar <input type="text" placeholder="name here" id="name">
+            </h2>
+        </section>
+        <!-- section intro end -->
+
+        <!-- section header-->
+        <section class="create-todo">
+            <h3>Buat TODO List Anda </h3>
+
+            <form id="new-todo-form">
+                <h4>apa yang ada di daftar tugas anda?</h4>
+                <input type="text" 
+                name="content" 
+                id="content" 
+                placeholder="Contoh: Buat Video "/>
+                <div class="title-option"> <h4>Pilih Category</h4></div>
+               
+                <div class="option">
+                   
+                    <label>
+                        <input type="radio" name="category" id="category1" 
+                        value="bisnis"/>
+                        <span class="buble bisnis"></span>
+                        <div class="text-buble"> Bisnis</div>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="category" id="category2"  value="pribadi"/>
+                        <span class="buble pribadi"></span>
+                        <div class="text-buble"> Pribadi</div>
+                    </label>
+                </div>
+
+                <!-- button submit -->
+                <input type="submit" value="Tambahkan Tugas" class="button-option">
+            </form>
+
+        </section>
+        <!-- section header-->
+
+        <!-- section list list todo -->
+        <section class="todo-list">
+            <h3 class="title-todolist">List Tugas Anda</h3>
+            <div class="list" id="todo-list">
+                <!-- <div class="todo-item done">
+                    <label>
+                        <input type="checkbox" class="checkbox"/>
+                        <span class="buble bisnis"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="buat video" readonly class='content-input' />
+                    </div>
+
+                    <div class='date'> </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="hapus">Hapus</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox"class="checkbox"/>
+                        <span class="buble pribadi"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="buat video" readonly/>
+                    </div>
+
+                      <div class ='date'> </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="hapus">Hapus</button>
+                    </div> -->
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- style js -->
+    <script src="main.js"></script>
+</body>
+</html>
